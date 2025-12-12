@@ -4,30 +4,30 @@
   const steps = [
     {
       id: "discover",
-      title: "Discover Novel Opportunities",
-      text: "The right problem is the one worth solving. We quickly uncover actionable opportunities through data and business insights, ensuring that every discovery is grounded in what matters most for your business and your users.",
-      tags: ["Business & Market Research", "Data Driven Insights", "UX Audits", "Customer Journey Mapping", "Brand Perception Analysis", "Technical Assessment"],
+      title: "Discover Hidden Beauty",
+      text: "Every essay begins with finding the extraordinary in the ordinary. We seek out moments of profound beauty that exist beyond language—the kind that makes you pause, breathe, and see the world differently.",
+      tags: ["Cultural Exploration", "Aesthetic Philosophy", "Mindful Observation", "Pattern Recognition", "Emotional Resonance", "Timeless Wisdom"],
       graphic: "lines"
     },
     {
-      id: "envision",
-      title: "Envision Innovative Strategies",
-      text: "Great strategies don't just come from ideas—they come from clear, actionable plans. We create pragmatic roadmaps that balance ambition with feasibility, focusing on what will drive immediate and long-term impact for both business and users.",
-      tags: ["CX & Product Strategy", "Vision & Roadmapping", "Value Proposition Design", "Northstar Metric Framework", "Brand Strategy & Positioning", "Technical Solution Design"],
+      id: "curate",
+      title: "Curate Contemplative Moments",
+      text: "Not every beautiful thing deserves your attention. We carefully select essays that offer genuine depth and meaning, filtering out noise to bring you only what truly matters for your mindful break.",
+      tags: ["Quality Selection", "Thematic Coherence", "Emotional Depth", "Cultural Context", "Accessibility", "Timeless Relevance"],
       graphic: "curve"
     },
     {
-      id: "build",
-      title: "Build Engaging Touchpoints",
-      text: "We turn strategy into action—fast and efficiently. Whether designing intuitive interfaces, visual identities, or building scalable platforms, we focus on building holistic experiences that are both joyful and effective.",
-      tags: ["UX & UI Design", "Information Architecture", "App & Web Design", "Design Systems", "Content Strategy", "Agile Software Engineering"],
+      id: "immerse",
+      title: "Immerse in Tranquility",
+      text: "Each essay is crafted as a five-minute escape—a portal to contemplative spaces where you can find peace. We blend evocative imagery, thoughtful prose, and cultural insights into experiences that restore rather than drain.",
+      tags: ["Visual Storytelling", "Poetic Language", "Atmospheric Design", "Pacing & Rhythm", "Sensory Details", "Emotional Journey"],
       graphic: "circle-top"
     },
     {
-      id: "elevate",
-      title: "Elevate Delivery Capabilities",
-      text: "We make sure teams can deliver better outcomes, faster. By evolving collaborative workflows, upskilling teams, and implementing the right tools, we help you scale with confidence and consistency.",
-      tags: ["AI Consulting", "QA & Delivery", "Process Optimization", "Performance Analytics", "Continuous Improvement", "Change Management"],
+      id: "reflect",
+      title: "Reflect and Reconnect",
+      text: "The true value emerges after reading. Our essays plant seeds of awareness that continue growing, helping you find art amongst the patterns of daily life and reconnect with what matters most.",
+      tags: ["Lasting Impact", "Personal Meaning", "Mindful Living", "Perspective Shift", "Inner Peace", "Daily Practice"],
       graphic: "circle-waves"
     }
   ];
@@ -63,7 +63,7 @@
   });
 </script>
 
-<section class="bg-[#1a1a40] text-white py-24 px-6 md:px-12 relative" bind:this={sectionRef}>
+<section class="bg-gray-950 text-white py-24 px-6 md:px-12 relative" bind:this={sectionRef}>
   <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-12">
     
     <!-- Sticky Navigation -->
@@ -71,7 +71,7 @@
       <div class="space-y-8">
         {#each steps as step, i}
           <div class="transition-opacity duration-500 {i === activeStep ? 'opacity-100' : 'opacity-30'}">
-            <p class="text-xl md:text-2xl font-light mb-1">People work with us to</p>
+            <p class="text-xl md:text-2xl font-light mb-1">Our approach to</p>
             <h2 class="text-2xl md:text-3xl font-bold">{step.title}</h2>
           </div>
         {/each}
